@@ -21,7 +21,7 @@ public class Main {
 
                 try {
                     if (times % 1000 == 0) {
-                        Thread.sleep(1);
+                        Thread.sleep(100);
                     }
                     times++;
                 } catch (InterruptedException e) {
@@ -57,7 +57,6 @@ public class Main {
                 Runtime runtime = Runtime.getRuntime();
                 long usedMemory = runtime.totalMemory() - runtime.freeMemory();
                 System.out.println("Used Memory: " + usedMemory / 1024 / 1024 + " MB");
-
                 try {
                     Thread.sleep(5000);
                 } catch (InterruptedException e) {
